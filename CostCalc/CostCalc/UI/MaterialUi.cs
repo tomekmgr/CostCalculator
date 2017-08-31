@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CostCalc
+namespace CostCalc.UI
 {
-    public partial class Form1 : Form
+    public partial class MaterialUi : Form
     {
-        public Form1()
+        public MaterialUi()
         {
             InitializeComponent();
         }
