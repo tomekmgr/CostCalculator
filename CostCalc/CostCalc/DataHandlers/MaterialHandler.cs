@@ -34,7 +34,7 @@ namespace CostCalc.DataHandlers
                 using (FileStream fs = File.OpenRead(filePath))
                 {
                     MaterialHandler handler = (MaterialHandler)ser.Deserialize(fs);
-                    handler.FilePath = filePath;
+                    handler.FilePath = directory;
 
                     return handler;
                 }

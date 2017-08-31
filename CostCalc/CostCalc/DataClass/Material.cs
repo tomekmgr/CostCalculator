@@ -1,7 +1,10 @@
-﻿namespace CostCalc.DataClass
+﻿using System.ComponentModel;
+
+namespace CostCalc.DataClass
 {
     public class Material
     {
+        [ReadOnly(true)]
         public uint Id { get; set; }
 
         public string Name { get; set; }

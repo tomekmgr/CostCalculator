@@ -53,6 +53,7 @@
             this.materialDatabaseBtn.Name = "materialDatabaseBtn";
             this.materialDatabaseBtn.Size = new System.Drawing.Size(55, 55);
             this.materialDatabaseBtn.Text = "toolStripButton1";
+            this.materialDatabaseBtn.Click += new System.EventHandler(this.materialDatabaseBtn_Click);
             // 
             // mainForm
             // 

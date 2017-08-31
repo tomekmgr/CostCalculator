@@ -1,20 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using CostCalc.DataHandlers;
 using System.Windows.Forms;
 
 namespace CostCalc.UI
 {
     public partial class MaterialUi : Form
     {
-        public MaterialUi()
+        private MaterialHandler materialHandler;
+
+        public MaterialUi(MaterialHandler handler)
         {
+            this.materialHandler = handler;
             InitializeComponent();
+        }
+
+        private void MaterialUi_Shown(object sender, System.EventArgs e)
+        {
+
         }
     }
 }

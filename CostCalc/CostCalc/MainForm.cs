@@ -1,4 +1,5 @@
 ﻿using CostCalc.DataHandlers;
+using CostCalc.UI;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -29,6 +30,12 @@ namespace CostCalc
         private void mainForm_FormClosing(object sender, FormClosingEventArgs e)
         {
             this.material.Save();
+        }
+
+        private void materialDatabaseBtn_Click(object sender, EventArgs e)
+        {
+            MaterialUi ui = new MaterialUi(this.material);
+            ui.ShowDialog();
         }
     }
 }
